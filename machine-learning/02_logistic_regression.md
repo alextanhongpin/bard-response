@@ -21,3 +21,27 @@ For example, suppose we have a study of 100 people, 50 of whom were exposed to a
 It is important to note that odds ratios can be misleading if the outcome variable is rare. For example, if the event occurs in only 1% of the population, then an odds ratio of 2.0 means that people who are exposed to the factor are twice as likely to experience the event as people who are not exposed. However, this still means that only 2% of people who are exposed to the factor will experience the event.
 
 Odds ratios can also be misleading if the study has a small sample size. For example, if the study only has 100 people, then the odds ratio may be unstable and may not be a reliable estimate of the true association between the predictor variable and the outcome variable.
+
+
+## for logistic regression, why is it helpful to look at the false positive rate with the sensitivity rate?
+
+
+Logistic regression is a statistical method that is used to predict the probability of an event occurring. It is a type of regression analysis that uses a logistic function to model the probability of a binary outcome. The logistic function is a sigmoid function that has a range of [0,1]. This means that the predicted probability can be interpreted as the probability of the event occurring.
+
+The false positive rate (FPR) is the proportion of negative cases that are incorrectly classified as positive. The sensitivity rate is the proportion of positive cases that are correctly classified as positive.
+
+It is helpful to look at the FPR and sensitivity rate together when evaluating the performance of a logistic regression model. This is because the FPR and sensitivity rate are complementary measures of the model's accuracy. The FPR measures the model's ability to avoid false positives, while the sensitivity rate measures the model's ability to avoid false negatives.
+
+A high FPR indicates that the model is likely to produce false positives. This can be a problem in applications where false positives are costly or undesirable. For example, a medical diagnostic test with a high FPR may result in patients being unnecessarily treated for a condition that they do not have.
+
+A low sensitivity rate indicates that the model is likely to produce false negatives. This can be a problem in applications where false negatives are costly or undesirable. For example, a security system with a low sensitivity rate may fail to detect an intruder.
+
+The ideal logistic regression model will have a high sensitivity rate and a low FPR. However, in practice, it is often necessary to trade off between sensitivity and FPR. This is because it is difficult to achieve both high sensitivity and low FPR simultaneously.
+
+The decision of whether to prioritize sensitivity or FPR depends on the specific application. In some cases, it may be more important to avoid false positives, while in other cases, it may be more important to avoid false negatives.
+
+Here are some examples of how the FPR and sensitivity rate can be used to evaluate the performance of a logistic regression model:
+
+A medical diagnostic test with a FPR of 10% and a sensitivity rate of 90% means that 10% of patients who do not have the condition will be incorrectly diagnosed as having the condition, while 90% of patients who have the condition will be correctly diagnosed.
+A security system with a FPR of 5% and a sensitivity rate of 95% means that 5% of intruders will be able to bypass the system, while 95% of intruders will be detected.
+By looking at the FPR and sensitivity rate together, we can get a better understanding of how well a logistic regression model is performing. This information can be used to make decisions about whether to use the model in a particular application.
